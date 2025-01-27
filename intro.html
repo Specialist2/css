@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Intro to CSS</title>
+    <link rel="stylesheet" href="intro.css"/>
   </head>
   <body>
     <h1>css - Cascading Sytle Sheet</h1>
@@ -51,12 +52,43 @@
     <ul>
       <li>
         <h3>Inline</h3>
-        <p></p>
+        <p>
+          style="color:red"> We use the style attribute on individual
+          element.(code is less reusable and makes maintaining the application)
+        </p>
+      </li>
+      <li>
+        <h3>Internal CSS</h3>
+        <p>
+          Using the style element.(Doing styles within same file as structure is
+          not recommended. Style also won't be shared to other html pages.)
+        </p>
       </li>
       <li>
         <h3>External CSS (Recommended)</h3>
-        <p></p>
+        <p>
+          Using a different file(.CSS) linked to the html page using the link
+          element usually placed in the head of html page)
+        </p>
       </li>
     </ul>
+    <style>
+      p {
+        color: green;
+        font-weight: bold;
+      }
+    </style>
+    <!--
+    Discuss these terms in css context (use code
+  example is possible)
+  1. Cascading
+  2. Inheritance
+  3. Specificity
+  
+  (All these help the browser which value to use)
+  -->
+      
+    </body>
+    </html>
   </body>
 </html>
